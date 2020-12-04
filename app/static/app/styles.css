@@ -1,0 +1,116 @@
+html {
+    min-height: 100%;
+}
+
+.body {
+    padding: 30px 60px 30px 60px;
+}
+
+.table-row:hover {
+    cursor: pointer;
+}
+
+.jumbotron {
+    padding: 40px 32px 40px 32px;
+}
+
+button {
+    margin: 10px 20px 20px 0px;
+}
+
+.page-link {
+    background-color: #343a40;
+    color: #fff;
+    border-color: #454d55;
+}
+
+.page-link:hover {
+    background-color: #212529;
+    color: #fff;
+    border-color: #454d55;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.next {
+    margin-left: 10px;
+}
+
+#greeting-img {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+#edit-layer-btn {
+    display: flex;
+    justify-content: center;
+}
+
+#canvas {
+    border: 1px solid black;
+}
+
+.message {
+    border: 1px solid lightgrey;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.message-author {
+    color: grey;
+}
+
+.message-time {
+    color: grey;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 720px) {
+    #greeting-img {
+        display: none;
+    }
+
+    table {
+        font-size: small;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: medium;
+    }
+
+    .jumbotron {
+        font-size: small;
+    }
+
+    #sketch-canvas {
+        display: none;
+    }
+
+    .message {
+        font-size: small;
+    }
+
+    form {
+        font-size: small;
+    }
+
+    .btn-dark {
+        font-size: small;
+    }
+
+    .page-item {
+        font-size: small;
+    }
+}
+
+#responsive {
+    overflow-x: auto;
+}

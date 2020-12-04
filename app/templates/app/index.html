@@ -1,0 +1,11 @@
+{% extends "app/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <div id="root"></div>
+{% endblock %}
+
+<!--Custom JS script-->
+{% block script %}
+    <script type="text/babel" src="{% static 'app/app.js' %}"></script>
+{% endblock %}

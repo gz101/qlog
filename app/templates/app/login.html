@@ -1,0 +1,38 @@
+{% extends "app/layout.html" %}
+
+{% block body %}
+
+    <div class="jumbotron">
+        <h2>Login</h2>
+        <form action="{% url 'login' %}" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <input autofocus class="form-control" type="text" name="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="password" name="password" placeholder="Password">
+            </div>
+            <input class="btn btn-dark" type="submit" value="Login">
+        </form>
+        Don't have an account? <a href="{% url 'register' %}">Register here.</a>
+    </div>
+
+    <div class="container-fluid bg-3 text-center">
+        <h5>Some of our (fictional) partners</h5><br>
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ4CwYpQ3KjseK9rguWE9zw47JQnoPycg5MPA&usqp=CAU" class="img-responsive" style="max-width:150px" alt="Image">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/404/165072101210829.Y3JvcCw4OTksNzAzLDAsMTAw.png" class="img-responsive" style="max-width:150px" alt="Image">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://cdn.themis-media.com/media/global/images/library/deriv/1298/1298061.png" class="img-responsive" style="max-width:150px" alt="Image">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://purenintendo.com/wp-content/uploads/2007/12/ub.jpg" class="img-responsive" style="max-width:150px" alt="Image">
+            </div>
+        </div>
+    </div><br>
+
+{% endblock %}
